@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my_profile</title>
+    <link rel="stylesheet" href="my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="header_장예은.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="section.js"></script>
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hd mw">
+        <nav>
+          <h1>
+            <a href="/"><i class="fa-solid fa-snowflake"></i> Ye-eun Jang</a>
+          </h1>
+          <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <div id="menu-container">
+        <ul class="menu-list accordion" style="display: none">
+          <li class="toggle accordion-toggle">
+            <a class="menu-link" href="#gr_box">Ye-eun Jang</a>
+            <div>
+              <ul class="menu-submenu">
+                <li><a href="#pr_box">last projects</a></li>
+                <li><a href="#intro_box">profile</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <section id="gr_box" class="gr_box">
+        <img src="./my_photo.jpg" alt="me" />
+        <h2>프론트엔드 개발자</h2>
+        <p>
+          I develop <span>ideas</span> and help build a better world through
+          software.
+        </p>
+        <a href="" class="add">알아보기</a>
+        <a href="">download cv <i class="fa-solid fa-arrow-right c1"></i></a>
+      </section>
+
+      <section id="pr_box" class="pr_box">
+        <h2>Latest <span>Projects</span></h2>
+        <div class="swiper slide1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <h3>E-commerce</h3>
+                <div class="cate">
+                  <span class="labelReact">React</span>
+                  <span class="labelApi">Rest API</span>
+                </div>
+                <div class="back_box"></div>
+                <div class="add">
+                  <a href="">github <i class="fa-brands fa-github"></i></a>
+                  <a href="">deploy <i class="fa-solid fa-globe"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h3>Trybe Course</h3>
+                <div class="cate">
+                  <span class="labelReact">React native</span>
+                  <span class="labelApi">Redux</span>
+                </div>
+                <div class="back_box"></div>
+                <div class="add">
+                  <a href="">github <i class="fa-brands fa-github"></i></a>
+                  <a href="">deploy <i class="fa-solid fa-globe"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h3>Tryetunes</h3>
+                <div class="cate">
+                  <span class="labelReact">HTML</span>
+                  <span class="labelApi">CSS</span>
+                  <span class="labelApi">JS</span>
+                  <span class="labelApi">Redux</span>
+                </div>
+                <div class="back_box"></div>
+                <div class="add">
+                  <a href="">github <i class="fa-brands fa-github"></i></a>
+                  <a href="">deploy <i class="fa-solid fa-globe"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next next1"></div>
+          <div class="swiper-button-prev prev1"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="intro_box" class="intro_box">
+        <h2>Yeeun<span>Jang</span></h2>
+        <p>
+          Hello, I am Jang Ye-eun. I am a college student attending Sookmyung
+          Women's University. My major is IT engineering and I am learning many
+          fields of IT related to computer language. My favorite thing is to
+          make a website and I like to design and create it myself. From now on,
+          I will introduce the things that I am good at in my major field.
+          <span>Have a happy day :)</span>
+        </p>
+        <h3>Skills</h3>
+        <ul>
+          <li>
+            <div class="icon react">
+              <img src="./react.png" alt="react 사진" />
+            </div>
+            <strong class="re">React</strong>
+          </li>
+          <li>
+            <div class="icon nodejs">
+              <img src="./nodejs.png" alt="node.js 사진" />
+            </div>
+            <strong class="no">Node.js</strong>
+          </li>
+          <li>
+            <div class="icon mysql">
+              <img src="./mysql.png" alt="mySQL 사진" />
+            </div>
+            <strong class="my">MySQL</strong>
+          </li>
+        </ul>
+        <img src="./my_char.jpg" alt="아바타 사진" />
+      </section>
+    </div>
+
+    <footer class="add_box">
+      <div class="inner">
+        <div>
+          <div class="footing"><img src="./card.png" alt="card" /></div>
+          <h2>Do you have <span>any idea?</span></h2>
+          <p style="padding-bottom: 10px">
+            Let's build it. <span>together!</span>
+          </p>
+          <span>yeeun7117@sookmyung.ac.kr</span>
+          <div class="sns">
+            <div class="tw">
+              <a href=""><img src="./tw.png" alt="트위터 사진" /></a>
+            </div>
+            <div class="in">
+              <a href=""><img src="./in.png" alt="인스타 사진" /></a>
+            </div>
+          </div>
+          <p class="foot">
+            Developed by Ye-eun Jang | Design by<img
+              src="./rafo.png"
+              alt="rafo"
+            />
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
