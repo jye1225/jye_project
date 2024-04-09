@@ -37,7 +37,7 @@ accordionToggle.forEach((toggle) => {
 
 //swiper
 let swiper = new Swiper(".slide1", {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   pagination: {
